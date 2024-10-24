@@ -1,6 +1,6 @@
 import React from 'react'
 import Nav from '../Nav/nav.jsx'
-import './contactus.css'
+import './contactUs.css'
 import Contact from './contact.jsx'
 import Address from './address.jsx'
 
