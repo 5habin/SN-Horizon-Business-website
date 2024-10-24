@@ -1,9 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Nav from './components/Nav/nav.jsx';
-import Hero from './components/Hero/hero.jsx';
-import About from './components/About/about.jsx';
-import Service from './components/Service/service.jsx';
+import Hero from './components/hero/hero.jsx';
+import About from './components/about/about.jsx';
+import Service from './components/service/service.jsx';
 import Contact from './components/contact/contact.jsx';
 import ContactUs from './components/contact/contactUs.jsx'
 import Story from './components/story/story.jsx'; 
