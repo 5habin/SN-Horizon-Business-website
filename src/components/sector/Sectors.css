@@ -1,0 +1,159 @@
+.sectors-container {
+    margin-left: 120px;
+    margin-top:180px;
+    position: absolute;
+    width: 80%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sector-head {
+    color: rgb(255, 255, 255);
+    background: #0f2626;
+    position: absolute;
+    width: 100%;
+    height: 30%;
+  }
+
+  .sector-head h1 {
+    margin-top: 120px;
+    margin-left: 10%;
+    width: 600px;
+    color: #f0c94b;
+    font-family: "Noto Sans", sans-serif;
+  }
+  
+  .sectors-titles {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .sector-title {
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    transition: border-color 0.3s;
+  }
+  
+  .sector-title.active {
+    border-bottom: 2px solid #E2B007; 
+  }
+  
+  .sector-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .sector-image img {
+    width: 70%;
+    height: auto;
+    max-width: 500px;
+    border-radius: 10px;
+  }
+  
+  .sector-description {
+    padding: 0 20px;
+    width: 50%;
+  }
+  
+  .sector-description p {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: 'Quicksand', sans-serif;
+  }
+
+  .work-contact{
+    position: absolute;
+    top: 180%;
+  }
+  
+
+  @media (max-width: 1200px){
+    .work-contact{
+        top: 190%;
+    }
+  }
+
+  @media (max-width: 1100px){
+    .work-contact{
+        top: 290%;
+    }
+  }
+
+
+  @media (max-width: 1100px) {
+    .sector-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .sector-description {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .sector-image img {
+      max-width: 100%;
+    }
+  }
+
+  @media (max-width: 700px){
+    .sectors-container{
+        margin-left: 60px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+
+    .sector-head h1{
+        font-size: 25px;
+        margin-left: 20%;
+    }
+
+    .sectors-titles {
+      flex-direction: column;
+    }
+  
+    .sector-title {
+      font-size: 16px;
+      padding: 8px;
+    }
+  
+    .sector-description p {
+      font-size: 14px;
+    }
+
+    .sector-image{
+        width: 100%;
+    }
+
+  }
+
+  @media(max-width:425px){
+    
+    .sectors-container {
+        margin-left: 20px;
+    }
+
+   .sector-head{
+    height: 22%;
+   }
+
+   .sector-head h1{
+    margin-left: 10%;
+    width: 250px;
+   }
+
+   .work-contact{
+    top: 140%;
+}
+  }
+  

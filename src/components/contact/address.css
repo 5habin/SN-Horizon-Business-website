@@ -1,0 +1,48 @@
+.address-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #1c4c4c;
+  }
+  
+  .address-left,
+  .address-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon {
+    font-size: 24px;
+    margin-right: 15px;
+    color: #ffffff;
+  }
+  
+  .address h3,
+  .email h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #ffffff;
+  }
+  
+  .address p,
+  .email p {
+    margin: 5px 0 0 0;
+    font-size: 16px;
+    color: #ffffff;
+  }
+  
+  @media (max-width: 768px) {
+    .contact-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .contact-left,
+    .contact-right {
+      margin-bottom: 20px;
+    }
+  }
+  

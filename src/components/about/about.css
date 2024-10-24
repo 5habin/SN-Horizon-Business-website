@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px; 
+    background-color: #ffffff;
+    margin: 5px 27px;
+}
+
+.about-left {
+    width: 30%;
+    background-color: #ffffff; 
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-right {
+    display: grid;
+    width: 70%; 
+    color: #5d5d5d;
+    font-family: "Quicksand", sans-serif;
+}
+
+.about-left h1 {
+    font-size: 2rem; 
+    font-weight: bold;
+    color: #5d5d5d;
+    font-family: "Noto Sans", sans-serif;
+}
+
+.highlight {
+    color: #073306; 
+}
+
+.right-highlight {
+    color: #073306;
+    font-size: larger;
+    font-weight: 600;
+    font-family: "Noto Sans", sans-serif;
+}
+
+.about-right-box {
+    background-color: white; 
+    padding: 20px; 
+    margin-right: 30px;
+    border-radius: 8px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; 
+}
+
+.about-right-box p {
+    margin: 0; 
+    font-size: 1.1rem; 
+    line-height: 1.6; 
+    text-align: justify; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    display: -webkit-box; 
+    -webkit-box-orient: vertical; 
+}
+
+.focus-h1{
+    margin-right: 50px;
+}
+
+.mobile-content{
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .about-section {
+        flex-direction: column; /* Stack the content vertically */
+        padding: 10px;
+    }
+
+    .about-left, .about-right {
+        width: 100%; /* Full width for each section */
+        margin-bottom: 20px; /* Space between the stacked sections */
+    }
+
+    .focus{
+        margin-top: -50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    .pc-content{
+        display: none;
+    }
+    .mobile-content{
+        display: block;
+        margin: 30px 20px;
+    }
+
+    .mobile-content h1{
+        margin: 10px 15px;
+        font-size: 27px;
+        font-weight: bold;
+        color: #5d5d5d;
+        font-family: "Noto Sans", sans-serif;
+    }
+
+    .mobile-content p{
+        color: #5d5d5d;
+        font-family: "Quicksand", sans-serif;
+        margin: 5px 15px;
+        text-align: justify; 
+        overflow: hidden; 
+        text-overflow: ellipsis; 
+        display: -webkit-box; 
+        -webkit-box-orient: vertical; 
+    }
+}

@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+.storysec h1{
+    margin-top: 70px;
+    color: rgb(41, 38, 38);
+    margin-left: 70px;
+    font-size: 26px;
+}
+
+.storysec {
+    width: 100%; /* Ensure full width */
+    max-width: 1200px; /* Optional: Limit max width for layout */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Optional: Add some padding */
+}
+
+.story-wrap {
+    display: flex; /* Use flexbox for layout */
+    align-items: flex-start; /* Align text and image to the top */
+    justify-content: space-between; /* Space between text and image */
+}
+
+.storysec p {
+    color: rgb(78, 75, 75);
+    margin: 10px auto; /* Adjust the margin */
+    font-size: 18px;
+    font-family: "Quicksand", sans-serif;
+    text-align: justify; /* Justify the text for even lines */
+    width: 50%; /* Control the width of the paragraph to leave space for the image */
+    line-height: 1.8; /* Adjust the line spacing */
+}
+
+.story-image {
+    width: 35%; /* Set the width of the image */
+    object-fit: contain; 
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    .story-wrap {
+        flex-direction: column; /* Stack the image and text vertically */
+        align-items: center; /* Center the content horizontally */
+        justify-content: center; /* Center the content vertically */
+    }
+
+    .storysec {
+        width: 80%; /* Make the container take 90% width */
+        margin: 0 auto; /* Equal margins on both sides */
+    }
+
+    .storysec h1{
+        margin-top: 10px;
+        color: rgb(41, 38, 38);
+        margin-left: 0px;
+        font-size: 26px;
+    }
+
+    .story-image {
+        width: 100%; /* Image takes full width */
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 20px; /* Add some space between image and text */
+    }
+
+    .storysec p {
+        width: 100%; /* Text takes full width below the image */
+        margin: 0 auto; /* Center the text */
+        text-align: left;
+    }
+}
+

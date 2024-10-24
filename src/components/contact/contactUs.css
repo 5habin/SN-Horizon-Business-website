@@ -1,0 +1,13 @@
+.contact-nav{
+    position: absolute;
+    margin-top: -100px;
+}
+
+.contact-address{
+    position: relative;
+    margin-top: 100px;
+}
+
+.contact-details{
+    position: relative;
+}

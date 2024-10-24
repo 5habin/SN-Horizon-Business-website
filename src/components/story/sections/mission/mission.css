@@ -1,0 +1,115 @@
+.mission-vision-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    width: 90%;
+    padding: 20px;
+    margin:auto 50px;
+    box-sizing: border-box;
+    margin-top: 50px;
+  }
+  
+  .box {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 45%; 
+    padding: 20px;
+    position: relative;
+    box-sizing: border-box;
+    min-height: 150px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .box-header {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .green-rectangle {
+    background-color: #f0c94b; 
+    width: 40%;
+    height: 35px; 
+    position: absolute;
+    margin-left: -30px;
+    top: 10px;
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%); 
+  }
+  
+  .box-title {
+    position: absolute;
+    z-index: 1; 
+    top: 10px;
+    font-size: 18px;
+    font-family: "Noto Sans", sans-serif;
+    color: rgb(8, 8, 8);
+    line-height: 35px; 
+    text-align: left;
+    margin: 0;
+  }
+  
+  .icon-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  
+  .mision-icon {
+    width: 35px; 
+    height: auto;
+  }
+
+  .vision-icon {
+    width: 45px; 
+    height: 50px;
+  }  
+  
+  .box p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    color: #333;
+    margin-top: 60px; 
+  }
+
+  @media (max-width: 828px){
+    .green-rectangle{
+        width: 50%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .box {
+      width: 100%; 
+    }
+    
+    .green-rectangle{
+        width: 50%;
+        top: 0;
+    }
+
+    .box-title{
+        top: 0;
+    }
+
+    .icon-container{
+        top: 0;
+    }
+
+    .box p {
+      margin-top: 40px; 
+    }
+  }
+
+  @media (max-width: 500px){
+
+    .mission-vision-container{
+        margin: auto 20px 0;
+    }
+
+    .green-rectangle{
+        width: 70%;
+    }
+
+  }
+  

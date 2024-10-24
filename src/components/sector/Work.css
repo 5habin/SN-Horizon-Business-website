@@ -1,0 +1,139 @@
+.work-container {
+    margin-left: 160px;
+    margin-right: 160px;
+    position: absolute;
+    margin-top: 650px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5px; /* Reduced padding for smaller side margins */
+    gap: 20px; /* Space between the boxes */
+    flex-wrap: wrap; /* Ensures the layout remains flexible and responsive */
+}
+
+.work-head h2 {
+    color: #1c4c4c;
+    font-size: 40px; /* Default size */
+    position: absolute;
+    top: 105%;
+    margin-left: 140px;
+    font-family: "Noto Sans", sans-serif;
+}
+
+/* Rest of your CSS here ... */
+
+.work-box {
+    font-family: "Quicksand", sans-serif;
+    background: #e2af07b6; /* Glass-like yellow background */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle 3D shadow */
+    border-radius: 10px;
+    padding: 20px; /* Adjusted padding for better fit */
+    position: relative;
+    width: 22%; /* Default width for large screens (4 boxes in a row) */
+    height: 250px; /* Taller box height */
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Adjusted to space content properly */
+    overflow: hidden; /* Prevent overflow of content */
+}
+
+/* Media Queries for .work-head h2 */
+@media (max-width: 1100px) {
+    .work-container {
+        margin-top: 800px;
+    }
+    .work-head h2 {
+        top: 139%;
+        font-size: 32px; /* Reduced font size */
+    }
+    .work-box {
+        width: 47%; /* Two boxes per row */
+        height: 220px;
+    }
+}
+
+@media (max-width: 845px) {
+    .work-container {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    .work-head h2 {
+        font-size: 32px; /* Reduced font size */
+    }
+    .work-box {
+        width: 38%;
+        height: 270px;
+    }
+}
+
+@media (max-width: 755px) {
+    .work-head h2 {
+        font-size: 28px; /* Further reduced font size */
+    }
+    .work-title {
+        font-size: 1.2em; /* Responsive font size */
+    }
+    
+    .work-description {
+        font-size: 1em; /* Responsive font size */
+    }
+}
+
+@media (max-width: 630px) {
+    .work-head h2 {
+        font-size: 24px; /* Smaller font size for smaller screens */
+    }
+    .work-box {
+        width: 40%; /* Two boxes per row */
+        height: 230px; /* Slightly reduced height for smaller screens */
+    }
+}
+
+@media (max-width: 585px) {
+    .work-head h2 {
+        font-size: 22px; /* Smaller font size */
+    }
+    .work-title {
+        font-size: 1em; /* Responsive font size */
+    }
+    
+    .work-description {
+        font-size: 0.8em; /* Responsive font size */
+    }
+}
+
+@media (max-width: 525px){
+    .work-head h2{
+        top: 140%;
+    }
+}
+
+@media (max-width: 450px) {
+    .work-container {
+    
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .work-box {
+        width: 45%; /* Two boxes per row */
+        height: 200px; /* Slightly reduced height for smaller screens */
+    }
+
+    .work-head h2 {
+        font-size: 20px;
+        margin-left: 30px;
+        width: 300px;
+        top: 85%;
+    }
+    
+    .work-title {
+        margin-top: 30px;
+        font-size: 0.8em; /* Responsive font size */
+    }
+    
+    .work-description {
+        font-size: 0.7em; /* Responsive font size */
+    }
+}

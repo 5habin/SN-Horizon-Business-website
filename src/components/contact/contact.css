@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+.contact-section {
+    padding: 40px;
+    background: #1c4c4c;
+    text-align: center;
+}
+
+.contact-title {
+    color: #f0c94b;
+    font-family: "Noto Sans", sans-serif;
+    margin-bottom: 20px;
+}
+
+.contact-container {
+    background-color: #f0f0f0;
+    padding: 20px;
+    bottom:10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.contact-info {
+    background-color: #1c4c4c;
+    border-radius: 20px;
+    padding: 20px;
+    width: 45%;
+    text-align: left;
+}
+
+.contact-info h2 {
+    margin-bottom: 10px;
+    color: #f0c94b;
+    font-family: "Noto Sans", sans-serif;
+}
+
+.contact-info p {
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Noto Sans", sans-serif;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-details p {
+    display: flex;
+    align-items: center;  /* Ensures the icon and text align properly */
+    margin: 5px 0;
+    font-family: "Noto Sans", sans-serif;
+    color: #f0f0f0;
+}
+
+.icon {
+    margin-right: 10px;
+    color: #f0c94b;
+    font-size: 10px;  /* Adjust the size of the icon */
+}
+
+.contact-form {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: "Noto Sans", sans-serif;
+}
+
+.contact-form button {
+    padding: 10px;
+    background-color: #1c4c4c;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Noto Sans", sans-serif;
+}
+
+.contact-form button:hover {
+    background-color: #b0912a;
+    color: #000;
+}
+
+textarea {
+    resize: none;
+    width: 100%;
+    min-width: 100%;
+    height: auto;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info, .contact-form {
+        width: 90%;
+    }
+
+    .contact-title {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 406px) {
+    .icon {
+        font-size: 18px; /* Adjust icon size for smaller screens */
+        margin-right: 5px;
+    }
+}

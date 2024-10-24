@@ -1,0 +1,267 @@
+/* Service Page Header */
+.service-head {
+  color: rgb(255, 255, 255);
+  background: #0f2626;
+  position: absolute;
+  width: 100%;
+  height: 40%;
+}
+
+.service-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align items */
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center align children */
+  width: 100%; /* Ensure it takes full width */
+  margin-top: 200px; /* Add some spacing at the top */
+}
+
+.service-head h1 {
+  color: #f0c94b;
+  margin-top: 150px;
+  margin-left: 10%;
+  width: 600px;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.para {
+  color: #000;
+  margin: 0 auto; /* Center align for responsive */
+  width: 70%; /* Maintain width for larger screens */
+  font-size: 18px;
+  font-family: "Quicksand", sans-serif;
+  text-align: justify; /* Justify the text for even lines */
+  line-height: 1.8; /* Adjust the line spacing */
+  padding-top: 50px; /* Add padding to push it down from the top */
+  position: relative; /* Change to relative positioning */
+}
+
+.services-container {
+  width: 85%; /* Adjusted for responsiveness */
+  margin-top: 50px; /* Ensure there's space above */
+  margin-left: auto; /* Center alignment */
+  margin-right: auto; /* Center alignment */
+  display: flex;
+  flex-direction: column; /* Stack services vertically */
+}
+/* Service Section */
+.service-section {
+  margin-bottom: 50px; /* Increased space between service sections */
+  width: 100%;
+}
+
+/* Service Titles */
+.service-title {
+  font-size: 24px;
+  font-family: 'Noto Sans', sans-serif;
+  cursor: pointer;
+  background-color: white;
+  color: #525445;
+  padding: 26px 0; /* Increase padding for better spacing */
+  position: relative;
+  transition: color 0.7s ease;
+  border: none;
+  text-align: left; /* Left align the text */
+  padding-left: 0px; /* Add padding to align titles */
+  width: 100%; /* Titles take full width */
+  margin-left: 0; /* Ensure all titles start from the same point */
+}
+
+/* Adjust Arrow - "V" Shaped Arrow Rotated 90 Degrees */
+.service-title::after {
+  content: 'V'; /* "V" shaped arrow */
+  position: absolute;
+  right: 10px;
+  font-size: 18px;
+  transform: rotate(270deg); /* Start with V facing right */
+  transition: transform 0.7s ease;
+  color: #333; /* Color of the arrow */
+}
+
+/* Rotate Arrow Down When Title is Active */
+.service-title.active::after {
+  transform: rotate(360deg); /* Rotate to point downward */
+}
+
+/* Grey Line Between Titles */
+.service-section:not(:last-child) {
+  border-bottom: 1px solid #ccc; /* Grey line to separate titles */
+  width: 90%; /* Widen the line to take more space */
+  margin: 0 auto; /* Center the line within the container */
+}
+
+/* Change Heading Color to Theme Color When Active */
+.service-title.active {
+  color: #1c4c4c; /* Theme color for active title */
+}
+
+/* Title Hover Effect */
+.service-title:hover {
+  color: #1c4c4c;
+}
+
+/* Service Content (Description, Image, Bullet Points) */
+.service-content {
+  max-height: 100%;
+  overflow: hidden;
+  transition: max-height 0.7s ease, opacity 0.7s ease 0.2s;
+  opacity: 0;
+  display: flex; /* Use flex to align image and bullet points horizontally */
+  align-items: flex-start;
+  margin-top: 10px;
+  flex-direction: column; /* Stack description above the image and bullet points */
+}
+
+.service-content.active {
+  opacity: 1; /* Fade in effect when active */
+}
+
+/* Service Content Description */
+.service-content p {
+  font-family: 'Quicksand', sans-serif; /* Match the description font */
+  font-size: 16px;
+  color: #333;
+  margin-top: 0; /* Remove extra space */
+  margin-bottom: 10px; /* Add space below the description */
+}
+
+/* Service Detail Section for Image and Bullet Points */
+.service-detail {
+  display: flex; /* Create a flex container */
+  justify-content: space-between; /* Space out items */
+  align-items: flex-start; /* Align items to the top */
+  margin-top: 10px; /* Space between description and detail */
+}
+
+.service-image-container{
+  display: flex;
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+/* Service Content Image */
+.service-image {
+  width: 80%; /* Adjust image width */
+  max-width: 320px; /* Ensure image does not exceed this size */
+  height: auto;
+  margin-right: 20px; /* Space between image and bullet points */
+  border-radius: 5px;
+}
+
+/* Service Content Bullet Points */
+.service-bullets {
+  flex: 1;
+}
+
+.service-content ul {
+  text-align: left;
+  list-style-type: disc; /* Bulleted list style */
+  margin-top: 10px;
+  margin-left: 20px; /* Space for bullet points */
+  flex: 1; /* Allow bullet points to take up remaining space next to the image */
+}
+
+
+/* Individual Bullet Points */
+.service-content ul li {
+  margin: 5px 0;
+  font-family: 'Quicksand', sans-serif;
+}
+
+/* Last Service Specific Styles */
+.last-service {
+  background-color: #ffffff; 
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 1000px) {
+
+  .para {
+    width: 90%; /* Make paragraph responsive */
+    padding-top: 30px; /* Adjust padding for smaller screens */
+    font-size: 16px; /* Adjust font size for readability */
+  }
+
+  .services-container {
+    width: 90%; /* Make container responsive */
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .service-title {
+    font-size: 20px; /* Slightly smaller font size on smaller screens */
+  }
+
+  .service-content {
+    flex-direction: column; /* Stack image and content vertically on smaller screens */
+  }
+
+  .service-image-container {
+    flex-direction: column; /* Stack image above bullet points */
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  .service-image {
+    max-width: 100%; /* Make image responsive */
+    margin: 0 0 10px 0; /* Adjust margin for spacing */
+  }
+
+  .service-content ul {
+    padding-left: 0; /* Remove padding on smaller screens */
+    margin-left: 20px; /* Maintain margin on left for bullets */
+    margin-top: 10px; /* Add space above bullet points */
+    list-style-type: disc; /* Ensure bullet points are displayed */
+  }
+}
+
+
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+  .services-container {
+    width: 90%; /* Make container responsive */
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .service-title {
+    font-size: 20px; /* Slightly smaller font size on smaller screens */
+  }
+
+  .service-content {
+    flex-direction: column; /* Stack image and content vertically on smaller screens */
+  }
+
+  .service-detail {
+    flex-direction: column; /* Stack image and bullet points vertically on smaller screens */
+    align-items: center; /* Center the items */
+  }
+
+  .service-image {
+    max-width: 100%; /* Make image responsive */
+    margin-bottom: 20px; /* Space below the image */
+  }
+
+  .service-bullets {
+    width: 100%; /* Make bullet points take full width on smaller screens */
+    text-align: left; /* Align bullet points to the left */
+  }
+}
+
+@media(max-width:430px){
+  .service-head{
+    height: 20%;
+  }
+  
+  .service-head h1{
+    margin-top: 120px;
+    margin-left: 20px;
+    width: 400px;
+  }
+}

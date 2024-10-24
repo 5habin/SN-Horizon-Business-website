@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/* Info Section Styles */
+.info-section {
+    display: flex;
+    flex-direction: column; 
+    gap: 40px; 
+    margin-left: 40px;
+}
+
+.info-box {
+    display: flex;
+    background-color: #1c4c4c9d; 
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+    padding: 20px; 
+    transition: background-color 0.3s ease; 
+    width: 50%; /* Adjust the width of the box */
+    margin-left: 150px; /* Left margin for the box */
+    min-height: 250px; /* Ensure box has some height */
+}
+
+.info-box p {
+    color: rgb(255, 255, 255);
+    margin-top: 20px; /* Adjust this margin */
+    font-family: "Quicksand", sans-serif;
+    text-align: justify; /* Justify the text for even lines */
+    width: 100%; /* Control the width of the paragraph to leave space for the image */
+    line-height: 1.8; /* Adjust the line spacing */
+}
+
+.info-box:hover {
+    background-color: #1c4c4c;
+    cursor: pointer; /* Darker shade on hover */
+}
+
+.info-title {
+    display: flex; /* Use flex to align the icon with the title */
+    align-items: center;
+    font-family: "Noto Sans", sans-serif;
+}
+
+.hover-icon {
+    display: none; /* Hide the icon by default */
+    margin-left: 10px; /* Space between title and icon */
+}
+
+.info-box:hover .hover-icon {
+    display: inline; /* Show the icon on hover */
+}
+
+.info-image {
+    width: 100%; /* Image takes full width of the container */
+    max-height: 150px; /* Set a maximum height to prevent overflow */
+    margin-top: -50px ;
+    margin-right: -70px;
+    object-fit: cover; /* Ensure the image covers the dimensions */
+    border-radius: 10px; /* Optional: round corners of the image */
+}
+
+/* Media Query for smaller screens */
+
+
+/* Media Query for screens 780px and below */
+@media (max-width: 780px) {
+
+    .info-section {
+        gap: 30px; /* Reduce gap */
+        margin-left: 0px; 
+    }
+
+    .info-box {
+        flex-direction: column;
+        margin-left: 50px;
+        width: 75%;
+        padding: 10px; /* Optional: Add padding for better spacing */
+        background-color: #1c4c4cee; 
+    }
+
+    .info-image {
+        margin-top: 0 ;
+        margin-right: 0;
+        margin-bottom: 10px;
+        object-fit: cover;
+    }
+    
+    .info-box:hover {
+        background-color: #1c4c4cee;
+    }
+
+    
+    .info-box p {
+        font-size: 16px; /* Adjust font size for better readability */
+        line-height: 1.6; /* Adjust line height for better readability */
+        margin-top: 10px;
+        text-align: left; /* Adjust margins to manage spacing */
+    }
+}
