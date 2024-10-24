@@ -1,5 +1,5 @@
 import React from 'react';
-import './Mission.css';
+import '.mission.css';
 import missionIcon from './mision-icon.png'; // Import local mission icon
 import visionIcon from './vision-icon.png'; // Import local vision icon
 
