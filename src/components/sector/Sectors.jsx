@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Sectors.css';
 import Nav from '../Nav/nav';
-import Work from './work';
+import Work from './Work';
 import Contact from '../contact/contact';
 import personal from './personal.png';
 import food from './food.png';
