@@ -1,6 +1,6 @@
 import React from 'react';
 import './story.css';
-import Nav from '../nav/nav'; 
+import Nav from '../Nav/nav.jsx'; 
 import Storysec from './sections/storysec/storysection'
 import Info from './sections/info/info'
 import Mission from './sections/mission/mission'
